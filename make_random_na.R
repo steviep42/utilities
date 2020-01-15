@@ -6,6 +6,11 @@ make_random_na <- function(df,thresh,numcols) {
   # thresh - what percentage of a column to assign NAs
   # numcols - how many columns into which to introduce NAs
 
+  # Make 1 percent (more or less) of three columns from mtcars
+  # contain missing values
+
+  # make_random_na(mtcars,0.1,3)
+
   # To make the introduction of NAs even more random
   # we'll use the threshold in conjunction with some noise
 
