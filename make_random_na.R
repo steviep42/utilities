@@ -6,6 +6,9 @@ make_random_na <- function(df,thresh,numcols) {
   # thresh - what percentage of a column to assign NAs
   # numcols - how many columns into which to introduce NAs
 
+  # To make the introduction of NAs even more random
+  # we'll use the threshold in conjunction with some noise
+
   idx <- sample(ncol(df),numcols)
   noise <- runif(numcols,0,2)
 
