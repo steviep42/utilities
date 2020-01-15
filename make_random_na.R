@@ -17,6 +17,7 @@ make_random_na <- function(df,thresh,numcols) {
   # in combination with a random noise factor
 
   for (ii in 1:length(idx)) {
+
     # Get random index for columns into which we introduce NAs
 
     how_many <- round(length((sample(nrow(df),nrow(df)*thresh)))*runif(1,0,1.4))+1
